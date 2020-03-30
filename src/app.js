@@ -22,11 +22,11 @@ app.get('', (req,res) => {
   res.render('index')
 })
 
-app.get('/about', (req,res) => {
-  res.render('about',{
-    title: '<h1>Welcome to my dang ol page</h1>'
-  })
-})
+// app.get('/about', (req,res) => {
+//   res.render('about',{
+//     title: '<h1>Welcome to my dang ol page</h1>'
+//   })
+// })
 
 app.get('/weather', (req,res) => {
 
