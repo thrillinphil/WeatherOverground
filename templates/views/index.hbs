@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Weather Overground</title>
+</head>
+<body style="background-image: url('cloudsroll.gif'); background-color: aqua;">
+  <div class="container-fluid col-sm-6 text-center" >
+    <div class="row">
+      
+    <div class="card mt-5 p-3">
+      <h1><img src="cloud.gif" height="100px" class="d-none d-md-inline"> WeatherOverground <img src="cloud.gif" height="100px" class="d-none d-md-inline"></h1> 
+      <input class="mt-2" type="text" id="input" placeholder="Put a city and state or country here">   
+      <button id="mainbtn" class="mt-2 btn-primary">Press Me</button>
+      <div class="card mt-5 text-center d-flex" id="displayCard" style="background-image: url('cloudsroll.gif'); background-color: rgb(255, 195, 205); background-size: contain; width: 2vm;">
+        
+      <div id="displayZone" class="d-block p-5">
+        <h2>Type in an address, city, or location to get started!</h2>
+      </div>
+    </div>
+    </div>
+    
+        
+  </div>
+  
+  </div>
+
+
+{{>footer}}
+    
+    
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+  <script src="./button.js"></script>
+  
+  
+
+
+</body>
+</html>
