@@ -19,7 +19,7 @@ input.addEventListener("keyup", function(event) {
 const getForecast = (e) => {
   address = document.getElementById('input').value;
 
-  fetch(`./weather?address=${address}`).then((response) => {
+  fetch(`/weather?address=${address}`).then((response) => {
     response.json().then((data) =>{
 
       if(data.error) {

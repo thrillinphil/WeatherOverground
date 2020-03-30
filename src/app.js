@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast.js');
 
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const viewsPath = path.join(__dirname, '../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
@@ -81,8 +82,8 @@ app.get('*', (req,res) => {
 
 // app.com/about
 
-app.listen(3000, () => {
+app.listen(port, () => {
 
-  console.log('Shit\'s goin down');
+  console.log('Shit\'s goin down on ' + port);
 
 });
